@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+        <array key="Raleway-VariableFont_wght.ttf">
+            <string>RalewayRoman-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActorBookConfirmationViewController" customModule="PerfectSelf" customModuleProvider="target">
+            <connections>
+                <outlet property="add_to_calendar" destination="cy6-cM-FRw" id="liI-06-vit"/>
+                <outlet property="add_to_google_calendar" destination="DCh-cO-rrw" id="0Hj-oa-hwU"/>
+                <outlet property="img_book_animation" destination="9MS-ti-pqt" id="2Ho-nl-mru"/>
+                <outlet property="lbl_datetime" destination="uaE-s9-c8I" id="LSQ-vR-uD2"/>
+                <outlet property="lbl_readerName" destination="ZD7-xC-dTf" id="zVs-Yl-uWk"/>
+                <outlet property="view" destination="AmB-bw-epL" id="VD1-cR-kLu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AmB-bw-epL">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OSz-ID-ksE">
+                    <rect key="frame" x="0.0" y="59" width="393" height="822"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ojb-J4-Xxt">
+                            <rect key="frame" x="20" y="0.0" width="353" height="34"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="T6B-ji-XO0">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFt-2o-IDn">
+                                            <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="JbF-l3-zDV" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                                <constraint firstAttribute="width" constant="34" id="MZt-Fe-51r" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <imageReference key="image" image="arrow.left" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="GoBack:" destination="-1" eventType="touchUpInside" id="Exx-G7-h5u"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="NPe-LJ-A0b" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QTu-l6-kJe">
+                            <rect key="frame" x="20" y="34" width="353" height="353"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9MS-ti-pqt">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="9MS-ti-pqt" secondAttribute="height" multiplier="1:1" id="nvg-gA-2ao"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C20-Iy-fpz">
+                            <rect key="frame" x="20" y="387" width="353" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Confirmation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xd-Mh-e7T">
+                                    <rect key="frame" x="0.0" y="8" width="353" height="24"/>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="yP6-QF-eif" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MDJ-zU-Phw">
+                            <rect key="frame" x="20" y="427" width="353" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading with  Alan Walker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZD7-xC-dTf">
+                                    <rect key="frame" x="8" y="8.6666666666666856" width="337" height="15.666666666666664"/>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                    <color key="textColor" red="0.58039215690000001" green="0.59607843140000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ZzG-gk-sX7" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="15" right="8"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qjw-zN-07m">
+                            <rect key="frame" x="20" y="467" width="353" height="3"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter_divide" translatesAutoresizingMaskIntoConstraints="NO" id="S7U-zh-Z6U">
+                                    <rect key="frame" x="0.0" y="1" width="353" height="1"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="3cD-AK-GmT" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Guk-w7-39A">
+                            <rect key="frame" x="20" y="470" width="353" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qba-7k-glD">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: Mar 14, 2023  3:00 pm EST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-s9-c8I">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="5nE-9D-R8E" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dXw-4r-f5s">
+                            <rect key="frame" x="20" y="520" width="353" height="3"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter_divide" translatesAutoresizingMaskIntoConstraints="NO" id="IOG-2u-fOM">
+                                    <rect key="frame" x="0.0" y="1" width="353" height="1"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="mAT-Kl-4u9" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="V0v-nQ-Sa4">
+                            <rect key="frame" x="20" y="523" width="353" height="185"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYk-hB-xis">
+                                    <rect key="frame" x="0.0" y="7.9999999999999982" width="96.333333333333329" height="16.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="RalewayRoman-Bold" family="Raleway" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lHb-e6-DAT">
+                                    <rect key="frame" x="0.0" y="24.333333333333371" width="353" height="152.66666666666666"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DCh-cO-rrw">
+                                            <rect key="frame" x="20" y="8" width="141.66666666666666" height="136.66666666666666"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-google-calendar-25" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-km-eRj">
+                                                    <rect key="frame" x="52.666666666666671" y="30" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="AX7-w4-rcZ"/>
+                                                        <constraint firstAttribute="width" constant="36" id="k07-0T-OlD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add to Google calendar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZi-QS-c4C">
+                                                    <rect key="frame" x="24.666666666666679" y="86" width="92.333333333333314" height="30.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
+                                                    <color key="textColor" red="0.45882352939999999" green="0.52941176469999995" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <gestureRecognizers/>
+                                            <edgeInsets key="layoutMargins" top="30" left="20" bottom="20" right="20"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="9"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="EOQ-C0-EPP" appends="YES" id="PFf-43-65c"/>
+                                            </connections>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cy6-cM-FRw">
+                                            <rect key="frame" x="191.66666666666663" y="8" width="141.33333333333337" height="136.66666666666666"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nrK-MG-MRl">
+                                                    <rect key="frame" x="52.666666666666657" y="31.666666666666664" width="36" height="32.999999999999993"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="TJ6-Aw-BU1"/>
+                                                        <constraint firstAttribute="height" constant="36" id="yGu-2e-Pe0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add to calendar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVu-OS-amu">
+                                                    <rect key="frame" x="21.33333333333335" y="86" width="98.666666666666686" height="30.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <gestureRecognizers/>
+                                            <edgeInsets key="layoutMargins" top="30" left="20" bottom="20" right="20"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="9"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="eNb-rt-M8v" appends="YES" id="9gO-JV-hnh"/>
+                                            </connections>
+                                        </stackView>
+                                    </subviews>
+                                    <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="185" id="60c-IL-p4P" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                <constraint firstItem="lHb-e6-DAT" firstAttribute="leading" secondItem="V0v-nQ-Sa4" secondAttribute="leading" id="fzv-qD-5we" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                <constraint firstAttribute="trailing" secondItem="lHb-e6-DAT" secondAttribute="trailing" id="qgU-kB-SUl" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                            <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="759" id="j8C-fw-atO" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="80" right="20"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="j8C-fw-atO"/>
+                        </mask>
+                    </variation>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-Wl-Tgw">
+                    <rect key="frame" x="0.0" y="806" width="393" height="109"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFf-lq-h4n">
+                            <rect key="frame" x="20" y="15" width="353" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="EXs-LL-opX" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Done" cornerStyle="dynamic">
+                                <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="CompleteBooking:" destination="-1" eventType="touchUpInside" id="poA-XO-njH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <edgeInsets key="layoutMargins" top="15" left="20" bottom="20" right="20"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wvk-bL-wtl"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iSi-Wl-Tgw" secondAttribute="bottom" id="4wq-F9-raW"/>
+                <constraint firstItem="OSz-ID-ksE" firstAttribute="leading" secondItem="wvk-bL-wtl" secondAttribute="leading" id="JhS-SC-hBQ"/>
+                <constraint firstItem="iSi-Wl-Tgw" firstAttribute="leading" secondItem="wvk-bL-wtl" secondAttribute="leading" id="NaG-WJ-F50"/>
+                <constraint firstItem="wvk-bL-wtl" firstAttribute="bottom" secondItem="OSz-ID-ksE" secondAttribute="bottom" id="SoX-8g-kLA"/>
+                <constraint firstItem="OSz-ID-ksE" firstAttribute="top" secondItem="wvk-bL-wtl" secondAttribute="top" id="eTS-G7-amz"/>
+                <constraint firstItem="wvk-bL-wtl" firstAttribute="trailing" secondItem="OSz-ID-ksE" secondAttribute="trailing" id="kjc-ue-Fer"/>
+                <constraint firstItem="wvk-bL-wtl" firstAttribute="trailing" secondItem="iSi-Wl-Tgw" secondAttribute="trailing" id="l41-B9-8S1"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="-627"/>
+        </view>
+        <tapGestureRecognizer id="EOQ-C0-EPP">
+            <connections>
+                <action selector="AddToGoogleCalendar:" destination="-1" id="qKU-Zy-aPK"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="eNb-rt-M8v">
+            <connections>
+                <action selector="AddToCalendar:" destination="-1" id="bMF-jy-iKF"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="filter_divide" width="334" height="1"/>
+        <image name="icons8-google-calendar-25" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

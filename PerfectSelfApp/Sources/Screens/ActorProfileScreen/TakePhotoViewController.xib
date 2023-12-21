@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakePhotoViewController" customModule="PerfectSelf" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6S-RS-q0g">
+                    <rect key="frame" x="0.0" y="47" width="390" height="597"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="9Aj-Dy-f0F" appends="YES" id="zes-xa-HZQ"/>
+                    </connections>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zgA-Ls-zcH">
+                    <rect key="frame" x="0.0" y="644" width="390" height="200"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSx-Sr-uxg">
+                            <rect key="frame" x="20" y="20.000000000000004" width="350" height="35.333333333333343"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="   Choose from library">
+                                <imageReference key="image" image="photo.artframe" catalog="system" symbolScale="medium"/>
+                                <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="ChooseFromLib:" destination="-1" eventType="touchUpInside" id="DFe-JE-gqf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5da-LQ-K6U">
+                            <rect key="frame" x="20" y="65.333333333333371" width="350" height="35.333333333333343"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="   Take photo">
+                                <imageReference key="image" image="camera" catalog="system" symbolScale="medium"/>
+                                <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="TakePhoto:" destination="-1" eventType="touchUpInside" id="YK1-cF-kVQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIH-in-BGr">
+                            <rect key="frame" x="20" y="110.66666666666661" width="350" height="35.333333333333329"/>
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="     Remove current picture">
+                                <imageReference key="image" image="trash" catalog="system" symbolScale="medium"/>
+                                <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="RemoveCurrentPicture:" destination="-1" eventType="touchUpInside" id="zwW-By-1gq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="pe4-Z8-B03"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zgA-Ls-zcH" secondAttribute="trailing" id="2ff-UO-RLt"/>
+                <constraint firstItem="c6S-RS-q0g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="N1v-t5-sRS"/>
+                <constraint firstItem="zgA-Ls-zcH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TBP-ex-RkT"/>
+                <constraint firstAttribute="bottom" secondItem="zgA-Ls-zcH" secondAttribute="bottom" id="cWf-De-ahK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c6S-RS-q0g" secondAttribute="trailing" id="dVp-L9-Wmy"/>
+                <constraint firstItem="zgA-Ls-zcH" firstAttribute="top" secondItem="c6S-RS-q0g" secondAttribute="bottom" id="kEC-T6-Cz4"/>
+                <constraint firstItem="c6S-RS-q0g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nQX-Yq-BSH"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+        <tapGestureRecognizer id="9Aj-Dy-f0F">
+            <connections>
+                <action selector="CloseModal:" destination="-1" id="Gwc-95-h27"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,37 @@
+# OS X
+.DS_Store
+PerfectSelfApp/.DS_Store
+PerfectSelfApp/Sources/Screens/.DS_Store
+PerfectSelfApp/Podfile.lock
+# Xcode
+PerfectSelfApp/build/
+PerfectSelfApp/*.pbxuser
+PerfectSelfApp/!default.pbxuser
+PerfectSelfApp/*.mode1v3
+PerfectSelfApp/!default.mode1v3
+PerfectSelfApp/*.mode2v3
+PerfectSelfApp/!default.mode2v3
+PerfectSelfApp/*.perspectivev3
+PerfectSelfApp/!default.perspectivev3
+PerfectSelfApp/xcuserdata/
+PerfectSelfApp/PerfectSelf.xcworkspace
+PerfectSelfApp/*.xccheckout
+PerfectSelfApp/profile
+PerfectSelfApp/*.moved-aside
+PerfectSelfApp/DerivedData
+PerfectSelfApp/*.hmap
+PerfectSelfApp/*.ipa
+PerfectSelfApp/Pods/
+# Bundler
+PerfectSelfApp/.bundle
+PerfectSelfApp/*.xcworkspace
+
+Carthage
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+# 
+# Note: if you ignore the Pods directory, make sure to uncomment
+# `pod install` in .travis.yml
+#
+

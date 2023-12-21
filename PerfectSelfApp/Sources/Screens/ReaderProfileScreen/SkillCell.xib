@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SkillCell" customModule="PerfectSelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Wv-ff-WOM">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skill1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNF-HU-nml">
+                                <rect key="frame" x="8.0000000000000036" y="13" width="57.333333333333343" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9R-dS-Ij8">
+                                <rect key="frame" x="65.333333333333329" y="9" width="26.666666666666671" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="small"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882352939999999" green="0.52941176469999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="5Wv-ff-WOM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4qu-eW-qqg"/>
+                <constraint firstItem="5Wv-ff-WOM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EA4-8d-iQP"/>
+                <constraint firstAttribute="trailing" secondItem="5Wv-ff-WOM" secondAttribute="trailing" id="mJz-6i-7Dv"/>
+                <constraint firstAttribute="bottom" secondItem="5Wv-ff-WOM" secondAttribute="bottom" id="mRj-fm-9G4"/>
+            </constraints>
+            <connections>
+                <outlet property="btn_disselect" destination="E9R-dS-Ij8" id="uSy-m7-aSx"/>
+                <outlet property="skillName" destination="wNF-HU-nml" id="JPN-yi-7XK"/>
+            </connections>
+            <point key="canvasLocation" x="-21" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

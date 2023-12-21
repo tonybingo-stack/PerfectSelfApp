@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="PerfectSelf" customModuleProvider="target">
+            <connections>
+                <outlet property="lbl_version" destination="Haz-d8-2gN" id="Nfl-gp-pUZ"/>
+                <outlet property="view" destination="thj-qu-bdS" id="ydG-lv-WpL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="thj-qu-bdS">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="login-bkg" translatesAutoresizingMaskIntoConstraints="NO" id="C7D-sD-WfC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                    <color key="backgroundColor" white="1" alpha="0.60264900662251653" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8A5-Gx-Ldj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qan-Oj-dLX">
+                            <rect key="frame" x="0.0" y="349" width="375" height="80"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZA6-td-nCA">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="6Nm-1u-zCM"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taking The Tech Out Of The Tape" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mx-6s-clW">
+                                    <rect key="frame" x="20" y="0.0" width="335" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="Ms6-KG-zfQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPX-TQ-1B3">
+                                    <rect key="frame" x="355" y="0.0" width="20" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="1uD-mA-N4q"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with Readers and Film Your Best Self Tape" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSN-38-KRU">
+                            <rect key="frame" x="10" y="464" width="355" height="37.666666666666686"/>
+                            <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="MtS-6h-OVt">
+                            <rect key="frame" x="93.666666666666671" y="141.66666666666663" width="187.66666666666663" height="187.33333333333337"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MtS-6h-OVt" secondAttribute="height" multiplier="1:1" id="VTF-Fw-LQB"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qan-Oj-dLX" secondAttribute="trailing" id="2KL-tq-mOs"/>
+                        <constraint firstItem="qan-Oj-dLX" firstAttribute="centerY" secondItem="8A5-Gx-Ldj" secondAttribute="centerY" id="Csh-tO-wJJ"/>
+                        <constraint firstItem="MtS-6h-OVt" firstAttribute="centerX" secondItem="8A5-Gx-Ldj" secondAttribute="centerX" id="HEH-Ae-AY4"/>
+                        <constraint firstItem="CSN-38-KRU" firstAttribute="leading" secondItem="8A5-Gx-Ldj" secondAttribute="leading" constant="10" id="MSR-ev-7so"/>
+                        <constraint firstAttribute="trailing" secondItem="CSN-38-KRU" secondAttribute="trailing" constant="10" id="Syp-lC-JHo"/>
+                        <constraint firstItem="MtS-6h-OVt" firstAttribute="bottom" secondItem="qan-Oj-dLX" secondAttribute="top" constant="-20" id="TM8-Xv-LF1"/>
+                        <constraint firstItem="qan-Oj-dLX" firstAttribute="centerX" secondItem="8A5-Gx-Ldj" secondAttribute="centerX" id="lvy-gN-44R"/>
+                        <constraint firstItem="MtS-6h-OVt" firstAttribute="width" secondItem="8A5-Gx-Ldj" secondAttribute="width" multiplier="0.5" id="mEA-cl-e82"/>
+                        <constraint firstItem="CSN-38-KRU" firstAttribute="top" secondItem="qan-Oj-dLX" secondAttribute="bottom" constant="35" id="r2s-Kf-ABS"/>
+                        <constraint firstItem="qan-Oj-dLX" firstAttribute="leading" secondItem="8A5-Gx-Ldj" secondAttribute="leading" id="ysk-uY-NXN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM4-l0-c7t">
+                    <rect key="frame" x="20" y="688" width="150" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="1KN-pB-rmw"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Login" titleAlignment="center">
+                        <fontDescription key="titleFontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="MB3-4F-RY0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMI-2J-pDN">
+                    <rect key="frame" x="205" y="688" width="150" height="60"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Sign Up" titleAlignment="center">
+                        <fontDescription key="titleFontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signup:" destination="-1" eventType="touchUpInside" id="5I7-YD-gKe"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.5.200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Haz-d8-2gN">
+                    <rect key="frame" x="74" y="406" width="227" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ZTF-yW-UO8"/>
+            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZTF-yW-UO8" firstAttribute="bottom" secondItem="VM4-l0-c7t" secondAttribute="bottom" constant="30" id="0fE-6S-6TF"/>
+                <constraint firstItem="C7D-sD-WfC" firstAttribute="leading" secondItem="ZTF-yW-UO8" secondAttribute="leading" id="5Jy-yr-PS7"/>
+                <constraint firstItem="ZTF-yW-UO8" firstAttribute="trailing" secondItem="8A5-Gx-Ldj" secondAttribute="trailing" id="BF5-HU-L2r"/>
+                <constraint firstItem="ZTF-yW-UO8" firstAttribute="trailing" secondItem="C7D-sD-WfC" secondAttribute="trailing" id="DdI-EZ-aU2"/>
+                <constraint firstItem="VM4-l0-c7t" firstAttribute="leading" secondItem="ZTF-yW-UO8" secondAttribute="leading" constant="20" id="KQt-GL-3AQ"/>
+                <constraint firstItem="ZTF-yW-UO8" firstAttribute="bottom" secondItem="C7D-sD-WfC" secondAttribute="bottom" id="Ls4-r0-kWa"/>
+                <constraint firstItem="ZTF-yW-UO8" firstAttribute="trailing" secondItem="OMI-2J-pDN" secondAttribute="trailing" constant="20" id="Lua-S4-wct"/>
+                <constraint firstItem="8A5-Gx-Ldj" firstAttribute="leading" secondItem="ZTF-yW-UO8" secondAttribute="leading" id="Rci-RL-GcS"/>
+                <constraint firstItem="8A5-Gx-Ldj" firstAttribute="top" secondItem="thj-qu-bdS" secondAttribute="top" id="Uvk-S6-Qe3"/>
+                <constraint firstItem="C7D-sD-WfC" firstAttribute="top" secondItem="thj-qu-bdS" secondAttribute="top" id="WNz-F6-IUY"/>
+                <constraint firstItem="OMI-2J-pDN" firstAttribute="height" secondItem="VM4-l0-c7t" secondAttribute="height" id="Z6X-UV-pls"/>
+                <constraint firstItem="VM4-l0-c7t" firstAttribute="width" secondItem="thj-qu-bdS" secondAttribute="width" multiplier="0.4" id="ZoA-ab-aZy"/>
+                <constraint firstItem="OMI-2J-pDN" firstAttribute="width" secondItem="VM4-l0-c7t" secondAttribute="width" id="hQU-Sh-XXx"/>
+                <constraint firstItem="ZTF-yW-UO8" firstAttribute="bottom" secondItem="OMI-2J-pDN" secondAttribute="bottom" constant="30" id="m0e-jd-k7r"/>
+                <constraint firstItem="ZTF-yW-UO8" firstAttribute="bottom" secondItem="8A5-Gx-Ldj" secondAttribute="bottom" id="wMH-MG-5hZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-888" y="-1272"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login-bkg" width="4176" height="4000"/>
+        <image name="splash" width="104" height="106"/>
+    </resources>
+</document>

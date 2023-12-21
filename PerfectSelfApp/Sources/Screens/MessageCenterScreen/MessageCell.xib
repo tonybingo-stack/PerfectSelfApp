@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MessageCell" customModule="PerfectSelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="53"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="JoX-rB-5KC">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="53"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peg-F8-F9S">
+                                <rect key="frame" x="115.66666666666667" y="0.0" width="59.333333333333329" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNB-Mr-VfM">
+                                        <rect key="frame" x="10" y="5" width="39.333333333333336" height="43"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="JoX-rB-5KC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6KZ-JP-J1x"/>
+                <constraint firstAttribute="bottom" secondItem="JoX-rB-5KC" secondAttribute="bottom" id="T2M-BW-Gfl"/>
+                <constraint firstAttribute="trailing" secondItem="JoX-rB-5KC" secondAttribute="trailing" id="WXM-MN-nE9"/>
+                <constraint firstItem="JoX-rB-5KC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h6o-Oi-DHS"/>
+            </constraints>
+            <size key="customSize" width="175" height="53"/>
+            <connections>
+                <outlet property="container" destination="JoX-rB-5KC" id="J8K-jz-Fnr"/>
+                <outlet property="messageLabel" destination="wNB-Mr-VfM" id="LnK-eC-7F3"/>
+                <outlet property="messageView" destination="peg-F8-F9S" id="gaF-x8-eHC"/>
+            </connections>
+            <point key="canvasLocation" x="74.045801526717554" y="20.774647887323944"/>
+        </collectionViewCell>
+    </objects>
+</document>

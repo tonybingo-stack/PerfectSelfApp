@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TapeItemViewCell" customModule="PerfectSelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbb-n3-I27">
+                        <rect key="frame" x="15" y="49.666666666666664" width="180" height="16.999999999999993"/>
+                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UHL-Xp-jzk">
+                        <rect key="frame" x="205" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UHL-Xp-jzk" secondAttribute="height" multiplier="1:1" id="cb3-PE-6rU"/>
+                            <constraint firstAttribute="height" constant="100" id="kEx-qi-hT7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UHL-Xp-jzk" secondAttribute="trailing" constant="15" id="4T1-Wz-JL8"/>
+                    <constraint firstItem="UHL-Xp-jzk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="74h-gL-v3i"/>
+                    <constraint firstItem="vbb-n3-I27" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="AA8-EQ-gvJ"/>
+                    <constraint firstItem="vbb-n3-I27" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PdA-qr-orj"/>
+                    <constraint firstAttribute="bottom" secondItem="UHL-Xp-jzk" secondAttribute="bottom" constant="8" id="TOa-B0-KFf"/>
+                    <constraint firstItem="UHL-Xp-jzk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ipQ-Dx-5xK"/>
+                    <constraint firstItem="UHL-Xp-jzk" firstAttribute="leading" secondItem="vbb-n3-I27" secondAttribute="trailing" constant="10" id="uKj-0f-40P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemTxt" destination="vbb-n3-I27" id="5CW-wI-U4C"/>
+                <outlet property="selectMark" destination="UHL-Xp-jzk" id="8UI-al-V5Q"/>
+            </connections>
+            <point key="canvasLocation" x="-41" y="-1"/>
+        </tableViewCell>
+    </objects>
+</document>

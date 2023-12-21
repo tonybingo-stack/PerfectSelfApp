@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortViewController" customModule="PerfectSelf" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_pricehightolow" destination="m5n-ob-5rF" id="gz4-R3-cyn"/>
+                <outlet property="btn_pricelowtohigh" destination="1En-hI-Vlz" id="Fbt-Gb-4a5"/>
+                <outlet property="btn_relevance" destination="qeA-O8-pbW" id="twz-DI-1nu"/>
+                <outlet property="btn_soonest" destination="pGf-mQ-2gk" id="tFf-7o-tQI"/>
+                <outlet property="view" destination="0gh-nP-7DD" id="djV-rD-Faj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0gh-nP-7DD">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wC-h9-PHN">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="NZ6-Nd-aRJ" appends="YES" id="ctS-x5-qpR"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpU-yx-Nvi">
+                    <rect key="frame" x="0.0" y="508" width="393" height="344"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a0Z-g1-S8b">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="344"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72T-Is-voo">
+                                    <rect key="frame" x="20" y="10" width="353" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SortBy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSO-JK-b9y">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="bQK-2b-CVd" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFT-4f-dEh">
+                                    <rect key="frame" x="20" y="50" width="353" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="yfK-NR-a55" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Ql-QL-AaS">
+                                    <rect key="frame" x="20" y="60" width="353" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeA-O8-pbW">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Relevance">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <state key="selected">
+                                                <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="SelectRelevance:" destination="-1" eventType="touchUpInside" id="3aG-Zx-U1F"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="8nY-0X-N8J" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RFg-SC-0M0">
+                                    <rect key="frame" x="20" y="95" width="353" height="10"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter_divide" translatesAutoresizingMaskIntoConstraints="NO" id="e5o-Vd-GhS">
+                                            <rect key="frame" x="0.0" y="4.6666666666666288" width="353" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="rfr-ZA-CBS" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-Yh-OV8">
+                                    <rect key="frame" x="20" y="105" width="353" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5n-ob-5rF">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Price high to low">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <state key="selected">
+                                                <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="SelectPriceHighToLow:" destination="-1" eventType="touchUpInside" id="Lbg-WJ-q4W"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="8S6-NP-frc" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7j0-71-3hi">
+                                    <rect key="frame" x="20" y="140" width="353" height="10"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter_divide" translatesAutoresizingMaskIntoConstraints="NO" id="8rn-tP-v6p">
+                                            <rect key="frame" x="0.0" y="4.6666666666666288" width="353" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="tAR-yK-PhJ" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E6Z-2G-V5K">
+                                    <rect key="frame" x="20" y="150" width="353" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1En-hI-Vlz">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Price low to high">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <state key="selected">
+                                                <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="SelectPriceLowToHigh:" destination="-1" eventType="touchUpInside" id="R5N-zm-3gj"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="BYp-NZ-bn9" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nsI-Ny-k60">
+                                    <rect key="frame" x="20" y="185" width="353" height="10"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter_divide" translatesAutoresizingMaskIntoConstraints="NO" id="VWU-q8-AwS">
+                                            <rect key="frame" x="0.0" y="4.6666666666666288" width="353" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="EpZ-IQ-iAt" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F8w-b1-NJJ">
+                                    <rect key="frame" x="20" y="195" width="353" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGf-mQ-2gk">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Available(soonest)">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <state key="selected">
+                                                <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="small"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="SelectAvailableSoonest:" destination="-1" eventType="touchUpInside" id="myb-5s-2Jd"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="1GM-eN-a1E" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kyg-gG-GhV">
+                                    <rect key="frame" x="20" y="230" width="353" height="10"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter_divide" translatesAutoresizingMaskIntoConstraints="NO" id="7oi-Cg-6Qf">
+                                            <rect key="frame" x="0.0" y="4.6666666666666288" width="353" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="e45-5h-WgK" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="grj-rI-V5A">
+                                    <rect key="frame" x="20" y="240" width="353" height="50"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xrz-M2-S8w">
+                                            <rect key="frame" x="10" y="5" width="333" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzy-yD-ql7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="333" height="40"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Save to apply">
+                                                        <backgroundConfiguration key="background" cornerRadius="8"/>
+                                                        <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="SaveToApply:" destination="-1" eventType="touchUpInside" id="cXA-LY-kxr"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="qck-T5-jJM" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                    <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                                </stackView>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="10" left="20" bottom="20" right="20"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="a0Z-g1-S8b" firstAttribute="top" secondItem="QpU-yx-Nvi" secondAttribute="top" id="HTg-KZ-Twe"/>
+                        <constraint firstAttribute="bottom" secondItem="a0Z-g1-S8b" secondAttribute="bottom" id="Ksb-5I-qC1"/>
+                        <constraint firstAttribute="trailing" secondItem="a0Z-g1-S8b" secondAttribute="trailing" id="Yms-Xd-Qbj"/>
+                        <constraint firstItem="a0Z-g1-S8b" firstAttribute="leading" secondItem="QpU-yx-Nvi" secondAttribute="leading" id="sae-JH-7Dz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KF2-ZV-NGt"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="KF2-ZV-NGt" firstAttribute="trailing" secondItem="9wC-h9-PHN" secondAttribute="trailing" id="37j-mq-aaU"/>
+                <constraint firstItem="QpU-yx-Nvi" firstAttribute="trailing" secondItem="KF2-ZV-NGt" secondAttribute="trailing" id="3KW-Mi-oDO"/>
+                <constraint firstAttribute="bottom" secondItem="QpU-yx-Nvi" secondAttribute="bottom" id="6HI-6L-Qfh"/>
+                <constraint firstItem="KF2-ZV-NGt" firstAttribute="bottom" secondItem="9wC-h9-PHN" secondAttribute="bottom" id="D7J-yh-0RU"/>
+                <constraint firstItem="QpU-yx-Nvi" firstAttribute="leading" secondItem="KF2-ZV-NGt" secondAttribute="leading" id="Stn-3z-ocu"/>
+                <constraint firstItem="9wC-h9-PHN" firstAttribute="top" secondItem="0gh-nP-7DD" secondAttribute="top" id="fbg-cM-aSb"/>
+                <constraint firstItem="9wC-h9-PHN" firstAttribute="leading" secondItem="KF2-ZV-NGt" secondAttribute="leading" id="hzi-bf-ZoH"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="21"/>
+        </view>
+        <tapGestureRecognizer id="NZ6-Nd-aRJ">
+            <connections>
+                <action selector="tapCallback:" destination="-1" id="9AP-hp-hoQ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
+        <image name="filter_divide" width="334" height="1"/>
+    </resources>
+</document>

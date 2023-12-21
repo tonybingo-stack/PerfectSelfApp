@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReaderProfileEditExperienceViewController" customModule="PerfectSelf" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_close_modal" destination="HtK-yC-T5D" id="WEl-Tv-I0J"/>
+                <outlet property="btn_end_date" destination="OX9-uC-ehR" id="Er0-Np-cZI"/>
+                <outlet property="btn_start_date" destination="7BP-2c-ChY" id="izP-BR-sNf"/>
+                <outlet property="date_picker" destination="lLn-AS-Wh6" id="22p-YW-nZJ"/>
+                <outlet property="lbl_start_end_date" destination="5dU-64-nqj" id="bUk-87-vBS"/>
+                <outlet property="text_degree" destination="yHI-t8-hyL" id="LKk-OJ-g4m"/>
+                <outlet property="text_description" destination="dq1-TJ-vT7" id="HyD-mq-my9"/>
+                <outlet property="text_end_date" destination="UY2-GX-g5j" id="F7i-bJ-Fhd"/>
+                <outlet property="text_school" destination="8sZ-IR-QxX" id="j3I-Uy-3Zj"/>
+                <outlet property="text_start_date" destination="xr5-vi-UpS" id="bWZ-SB-eov"/>
+                <outlet property="view" destination="Yfx-pt-jf0" id="ymR-sO-HWC"/>
+                <outlet property="view_background" destination="SZh-V7-pqy" id="XuN-le-Y3g"/>
+                <outlet property="view_date_modal" destination="EwK-0z-68F" id="9gO-kR-rcH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Yfx-pt-jf0">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aN-bg-9y9">
+                    <rect key="frame" x="0.0" y="139" width="393" height="604"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="32g-kQ-n5y">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="635"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OrP-tk-tlz">
+                                    <rect key="frame" x="20" y="0.0" width="353" height="560"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH0-Kk-bi2">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="ulh-w6-FsV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Acting School, issued Jun, 2020" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8sZ-IR-QxX">
+                                            <rect key="frame" x="0.0" y="40" width="353" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="fqY-v5-b4h" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.45882352939999999" green="0.52941176469999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degree or Certificate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91b-K3-JQB">
+                                            <rect key="frame" x="0.0" y="95" width="353" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="81N-9H-iiE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bachalor's degree" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yHI-t8-hyL">
+                                            <rect key="frame" x="0.0" y="135" width="353" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="7OE-4B-uti" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.45882352939999999" green="0.52941176469999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wYC-aP-6r6">
+                                            <rect key="frame" x="0.0" y="190" width="353" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" text="Start Date*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="393" translatesAutoresizingMaskIntoConstraints="NO" id="PkH-O6-ig3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="BYk-ib-ba8" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oty-eh-2AJ">
+                                                    <rect key="frame" x="0.0" y="30" width="353" height="40"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select start date" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xr5-vi-UpS">
+                                                            <rect key="frame" x="8" y="0.0" width="305" height="40"/>
+                                                            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="sA9-KB-mB7" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BP-2c-ChY">
+                                                            <rect key="frame" x="313" y="0.0" width="40" height="40"/>
+                                                            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="Cud-3I-6UP"/>
+                                                            </constraints>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="clock" catalog="system"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="ShowModalForStartDate:" destination="-1" eventType="touchUpInside" id="d9b-Ga-bIg"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="PwU-ha-w2R"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="0.0"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="1Lj-fc-H5J" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="16C-LO-KIi">
+                                            <rect key="frame" x="0.0" y="275" width="353" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" text="End Date (or expected)*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="393" translatesAutoresizingMaskIntoConstraints="NO" id="mt4-kc-QOL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="oLB-9x-P91" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipL-pk-3Ae">
+                                                    <rect key="frame" x="0.0" y="30" width="353" height="40"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select end date" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UY2-GX-g5j">
+                                                            <rect key="frame" x="8" y="0.0" width="305" height="40"/>
+                                                            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="e0i-gE-5M0" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX9-uC-ehR">
+                                                            <rect key="frame" x="313" y="0.0" width="40" height="40"/>
+                                                            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="bme-IE-BPZ"/>
+                                                            </constraints>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="clock" catalog="system"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="ShowModalForEndDate:" destination="-1" eventType="touchUpInside" id="fWp-mN-tQZ"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="gPn-eH-mU4"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="0.0"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="xhx-iD-uwv" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TcP-WS-yZm">
+                                            <rect key="frame" x="0.0" y="360" width="353" height="200"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="393" translatesAutoresizingMaskIntoConstraints="NO" id="JbY-U1-9LK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="IOU-xL-k2Q" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dq1-TJ-vT7">
+                                                    <rect key="frame" x="0.0" y="30" width="353" height="170"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.0" green="0.38431372549999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="teB-ay-fxZ" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="75" right="20"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="JJt-QZ-Qs6" firstAttribute="trailing" secondItem="32g-kQ-n5y" secondAttribute="trailing" id="1H2-sd-xMX"/>
+                        <constraint firstItem="32g-kQ-n5y" firstAttribute="width" secondItem="bJt-zS-PQg" secondAttribute="width" id="DtT-OS-YhI"/>
+                        <constraint firstItem="32g-kQ-n5y" firstAttribute="trailing" secondItem="bJt-zS-PQg" secondAttribute="trailing" id="Kfr-Td-REn"/>
+                        <constraint firstItem="bJt-zS-PQg" firstAttribute="top" secondItem="32g-kQ-n5y" secondAttribute="top" id="NR1-Pa-nvu"/>
+                        <constraint firstItem="bJt-zS-PQg" firstAttribute="leading" secondItem="32g-kQ-n5y" secondAttribute="leading" id="a8s-tu-zcg"/>
+                        <constraint firstItem="32g-kQ-n5y" firstAttribute="bottom" secondItem="bJt-zS-PQg" secondAttribute="bottom" id="cvh-uU-gFe"/>
+                        <constraint firstItem="JJt-QZ-Qs6" firstAttribute="leading" secondItem="32g-kQ-n5y" secondAttribute="leading" id="pCI-0E-e6p"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="bJt-zS-PQg"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="JJt-QZ-Qs6"/>
+                </scrollView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="L7v-4i-7Ee">
+                    <rect key="frame" x="20" y="59" width="353" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAY-Rc-mbj">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="80"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Experience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e3-Nv-OsX">
+                                    <rect key="frame" x="86.666666666666671" y="26" width="179.66666666666663" height="28.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="24"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4M-6W-W7N">
+                                    <rect key="frame" x="0.0" y="23" width="35" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="ZXx-ba-3jG" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                        <constraint firstAttribute="height" constant="34" id="hTl-cb-Bus" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <imageReference key="image" image="arrow.left" catalog="system" symbolScale="small"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="GoBack:" destination="-1" eventType="touchUpInside" id="K2f-BJ-AcD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="2e3-Nv-OsX" firstAttribute="centerY" secondItem="oAY-Rc-mbj" secondAttribute="centerY" id="IvZ-gn-tar"/>
+                                <constraint firstItem="e4M-6W-W7N" firstAttribute="centerY" secondItem="oAY-Rc-mbj" secondAttribute="centerY" id="Qsg-gT-wf0"/>
+                                <constraint firstItem="e4M-6W-W7N" firstAttribute="leading" secondItem="oAY-Rc-mbj" secondAttribute="leading" id="WwA-2o-T1N"/>
+                                <constraint firstItem="2e3-Nv-OsX" firstAttribute="centerX" secondItem="oAY-Rc-mbj" secondAttribute="centerX" id="vKg-pQ-mbh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="0Lj-jV-AYy" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                        <constraint firstItem="oAY-Rc-mbj" firstAttribute="top" secondItem="L7v-4i-7Ee" secondAttribute="top" id="0vM-Qk-NfK"/>
+                        <constraint firstAttribute="trailing" secondItem="oAY-Rc-mbj" secondAttribute="trailing" id="Mlj-fX-wsD"/>
+                        <constraint firstItem="oAY-Rc-mbj" firstAttribute="leading" secondItem="L7v-4i-7Ee" secondAttribute="leading" id="ekt-ZP-DmY"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sed-a4-MzA">
+                    <rect key="frame" x="0.0" y="743" width="393" height="109"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9E-AU-eWD">
+                            <rect key="frame" x="20" y="15" width="353" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8OD-Ts-lgE"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Save Changes" cornerStyle="dynamic">
+                                <backgroundConfiguration key="background" cornerRadius="5"/>
+                                <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="SaveChanges:" destination="-1" eventType="touchUpInside" id="363-AY-DOg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <edgeInsets key="layoutMargins" top="15" left="20" bottom="20" right="20"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="YES"/>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZh-V7-pqy" userLabel="Back">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EwK-0z-68F">
+                    <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="lnv-5l-8cY">
+                            <rect key="frame" x="20" y="20" width="260" height="18"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-64-nqj">
+                                    <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="18"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtK-yC-T5D">
+                                    <rect key="frame" x="246" y="0.0" width="14" height="18"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="xmark" catalog="system" symbolScale="small"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="CloseModal:" destination="-1" eventType="touchUpInside" id="0eQ-Dd-zJH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nb0-bU-FhY">
+                            <rect key="frame" x="20" y="43" width="260" height="200"/>
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="lLn-AS-Wh6">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="200"/>
+                                </datePicker>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="hTU-xK-B4H"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="leB-rK-Cns">
+                            <rect key="frame" x="20" y="248" width="260" height="32"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dO-fI-0RM">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="32"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Apply">
+                                        <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="ApplyDate:" destination="-1" eventType="touchUpInside" id="g4l-Za-lnI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="8Op-RA-Ssq"/>
+                        <constraint firstAttribute="height" constant="300" id="PLy-9I-lgC"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="mo5-mW-fMR"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mo5-mW-fMR" firstAttribute="trailing" secondItem="L7v-4i-7Ee" secondAttribute="trailing" constant="20" id="3CF-Yp-VYX"/>
+                <constraint firstItem="Sed-a4-MzA" firstAttribute="leading" secondItem="mo5-mW-fMR" secondAttribute="leading" id="49S-CR-sd4"/>
+                <constraint firstItem="EwK-0z-68F" firstAttribute="centerY" secondItem="Yfx-pt-jf0" secondAttribute="centerY" id="8NZ-xu-slc"/>
+                <constraint firstAttribute="top" secondItem="SZh-V7-pqy" secondAttribute="top" id="B26-FK-emC"/>
+                <constraint firstAttribute="trailing" secondItem="SZh-V7-pqy" secondAttribute="trailing" id="DQj-wK-DbN"/>
+                <constraint firstItem="1aN-bg-9y9" firstAttribute="top" secondItem="L7v-4i-7Ee" secondAttribute="bottom" id="EQL-2l-CkK"/>
+                <constraint firstItem="EwK-0z-68F" firstAttribute="centerX" secondItem="Yfx-pt-jf0" secondAttribute="centerX" id="HDJ-pK-qxv"/>
+                <constraint firstItem="1aN-bg-9y9" firstAttribute="leading" secondItem="mo5-mW-fMR" secondAttribute="leading" id="HLT-Fp-nGi"/>
+                <constraint firstAttribute="bottom" secondItem="Sed-a4-MzA" secondAttribute="bottom" id="Lij-0f-uMB"/>
+                <constraint firstItem="L7v-4i-7Ee" firstAttribute="leading" secondItem="mo5-mW-fMR" secondAttribute="leading" constant="20" id="MHx-KM-3SM"/>
+                <constraint firstItem="SZh-V7-pqy" firstAttribute="leading" secondItem="Yfx-pt-jf0" secondAttribute="leading" id="Qny-4z-3ER"/>
+                <constraint firstItem="Sed-a4-MzA" firstAttribute="top" secondItem="1aN-bg-9y9" secondAttribute="bottom" id="W98-3v-Db2"/>
+                <constraint firstItem="SZh-V7-pqy" firstAttribute="bottom" secondItem="Yfx-pt-jf0" secondAttribute="bottom" id="coa-A3-boO"/>
+                <constraint firstItem="mo5-mW-fMR" firstAttribute="trailing" secondItem="Sed-a4-MzA" secondAttribute="trailing" id="jo9-aa-xeh"/>
+                <constraint firstItem="mo5-mW-fMR" firstAttribute="trailing" secondItem="1aN-bg-9y9" secondAttribute="trailing" id="rjj-qM-mt3"/>
+                <constraint firstItem="L7v-4i-7Ee" firstAttribute="top" secondItem="mo5-mW-fMR" secondAttribute="top" id="yfq-zG-Q6F"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="-627"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

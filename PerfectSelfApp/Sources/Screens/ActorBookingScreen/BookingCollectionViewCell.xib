@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookingCollectionViewCell" customModule="PerfectSelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gx6-C8-ndf">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="145"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eZe-fm-wg8">
+                                <rect key="frame" x="8" y="8" width="234.66666666666666" height="32.333333333333336"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading Session with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkd-94-74j">
+                                        <rect key="frame" x="0.0" y="0.0" width="128.66666666666666" height="32.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jonathan walker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSS-Q1-65b">
+                                        <rect key="frame" x="133.66666666666666" y="0.0" width="101" height="32.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                        <color key="textColor" systemColor="tintColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V2b-E7-tng"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V2b-E7-tng"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RVi-Mk-CPf">
+                                <rect key="frame" x="8" y="40.333333333333329" width="280.66666666666669" height="32.333333333333329"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tFW-VB-Syu">
+                                        <rect key="frame" x="0.0" y="0.0" width="140.33333333333334" height="32.333333333333336"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xXs-r3-DQz">
+                                                <rect key="frame" x="0.0" y="1.6666666666666661" width="18" height="29.333333333333336"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="LiI-6u-pAC"/>
+                                                    <constraint firstAttribute="width" constant="18" id="Wfi-eu-Swa"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="LiI-6u-pAC"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16, Mar 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHF-Un-J7J">
+                                                <rect key="frame" x="22.999999999999993" y="0.0" width="117.33333333333331" height="32.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bTB-zx-B9y">
+                                        <rect key="frame" x="140.33333333333331" y="0.0" width="140.33333333333331" height="32.333333333333336"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wgy-iZ-TOz">
+                                                <rect key="frame" x="0.0" y="0.99999999999999822" width="18" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="8Qp-rx-cq0"/>
+                                                    <constraint firstAttribute="width" constant="18" id="PCe-Sa-slq"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="8Qp-rx-cq0"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00 aM ~ 4:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF2-fh-riS">
+                                                <rect key="frame" x="22.999999999999993" y="0.0" width="117.33333333333331" height="32.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="95c-cL-0nL">
+                                <rect key="frame" x="8" y="72.666666666666671" width="97.333333333333329" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwv-Eu-J9U">
+                                        <rect key="frame" x="0.0" y="0.66666666666665719" width="97.333333333333329" height="30.333333333333332"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="view script">
+                                            <imageReference key="image" image="arrowshape.right" catalog="system" symbolScale="small"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View Script" imagePadding="5" cornerStyle="dynamic">
+                                            <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
+                                            <backgroundConfiguration key="background"/>
+                                            <fontDescription key="titleFontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="5" bottom="5" trailing="5"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ViewScript:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dRn-bd-dUD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="OBU-Te-TIu"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OBU-Te-TIu"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B2i-T7-jWi">
+                                <rect key="frame" x="8" y="104.66666666666667" width="312" height="32.333333333333329"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoR-8B-GHc">
+                                        <rect key="frame" x="0.0" y="0.0" width="54.333333333333336" height="32.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Join Meeting">
+                                            <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="JoinMeeting:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wML-nt-Gj8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbd-S0-Bjf">
+                                        <rect key="frame" x="64.333333333333329" y="0.0" width="54.333333333333329" height="32.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Accept">
+                                            <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="AcceptBooking:" destination="gTV-IL-0wX" eventType="touchUpInside" id="IRG-gn-ngb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKD-r9-I2d">
+                                        <rect key="frame" x="128.66666666666666" y="0.0" width="54.666666666666657" height="32.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Reschedule">
+                                            <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="RescheduleBooking:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ftc-4Y-jZv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5q-UL-66W">
+                                        <rect key="frame" x="193.33333333333334" y="0.0" width="54.333333333333343" height="32.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Send Messsage">
+                                            <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.56862745100000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="SendMessage:" destination="gTV-IL-0wX" eventType="touchUpInside" id="6ar-Rn-d6l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMN-cX-vSa">
+                                        <rect key="frame" x="211.33333333333334" y="0.0" width="48.000000000000028" height="32.333333333333336"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                            <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                            <color key="baseForegroundColor" red="0.88111888110000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="CancelBooking:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Vm5-We-VRU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="247" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urZ-Ba-AGZ">
+                                        <rect key="frame" x="257.66666666666669" y="0.0" width="54.333333333333314" height="32.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="How’s the experience?">
+                                            <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="RateReader:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Yxy-hz-v8L"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="BMN-cX-vSa"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B2i-T7-jWi" secondAttribute="trailing" constant="8" id="WYs-9Q-MhZ"/>
+                            <constraint firstItem="B2i-T7-jWi" firstAttribute="leading" secondItem="gx6-C8-ndf" secondAttribute="leading" constant="8" id="vIZ-Is-yVs"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="opaqueSeparatorColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gx6-C8-ndf" secondAttribute="bottom" id="8ul-rs-tIB"/>
+                <constraint firstItem="gx6-C8-ndf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g4c-LE-Upk"/>
+                <constraint firstAttribute="trailing" secondItem="gx6-C8-ndf" secondAttribute="trailing" id="k1m-nW-7Ux"/>
+                <constraint firstItem="gx6-C8-ndf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kd8-dO-hmI"/>
+            </constraints>
+            <size key="customSize" width="328" height="132"/>
+            <connections>
+                <outlet property="btnViewScript" destination="nwv-Eu-J9U" id="Vgg-AR-EhP"/>
+                <outlet property="btn_accept" destination="bbd-S0-Bjf" id="ct8-XJ-V6k"/>
+                <outlet property="btn_cancel" destination="BMN-cX-vSa" id="gUZ-HM-U1D"/>
+                <outlet property="btn_joinmeeting" destination="eoR-8B-GHc" id="PBN-iU-v9a"/>
+                <outlet property="btn_rate" destination="urZ-Ba-AGZ" id="X0w-1X-lJ4"/>
+                <outlet property="btn_reschedule" destination="yKD-r9-I2d" id="2vJ-gG-oE5"/>
+                <outlet property="btn_sendmsg" destination="s5q-UL-66W" id="eE3-Q0-J9y"/>
+                <outlet property="lbl_date" destination="CHF-Un-J7J" id="qn4-8S-Xjt"/>
+                <outlet property="lbl_name" destination="qSS-Q1-65b" id="TXP-Vg-W3u"/>
+                <outlet property="lbl_time" destination="fF2-fh-riS" id="2mv-Ea-M45"/>
+                <outlet property="view_btngroup" destination="B2i-T7-jWi" id="hm2-dH-CLa"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="-10"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.right" catalog="system" width="128" height="104"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="clock" catalog="system" width="128" height="123"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

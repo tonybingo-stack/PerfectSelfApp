@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+        <array key="Rationale-Regular.ttf">
+            <string>Rationale-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReaderHomeViewController" customModule="PerfectSelf" customModuleProvider="target">
+            <connections>
+                <outlet property="bookList" destination="2Dm-r2-MoJ" id="9BP-sy-pxB"/>
+                <outlet property="switch_mode" destination="gHp-f7-WuJ" id="Sgz-Xe-vfC"/>
+                <outlet property="todayLabel" destination="wr4-6f-xy3" id="8gF-iR-lWi"/>
+                <outlet property="view" destination="qLi-rg-96i" id="LRk-vI-taQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qLi-rg-96i">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-t7-djH">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V0M-kY-ORQ">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="310"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFECT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bK-mh-FPg">
+                                    <rect key="frame" x="63.666666666666657" y="100" width="265.66666666666674" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="NoT-14-Dg0" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Rationale-Regular" family="Rationale" pointSize="60"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S   E   L   F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPJ-MX-Mho">
+                                    <rect key="frame" x="152" y="100" width="89.333333333333314" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="eNT-6A-1Ta" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Rationale-Regular" family="Rationale" pointSize="27"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Qwn-r2-nKj">
+                                    <rect key="frame" x="144.66666666666666" y="100" width="104" height="104"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Qwn-r2-nKj" secondAttribute="height" multiplier="1:1" id="xK5-ee-tNX"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-3G-yWX">
+                                    <rect key="frame" x="96.666666666666686" y="204" width="200" height="6"/>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Actors Film Their Self Tape" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9d-5u-un2">
+                                    <rect key="frame" x="25" y="210" width="343.33333333333331" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="1sP-ga-OFT" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksa-5V-0yK">
+                                    <rect key="frame" x="171.66666666666666" y="250" width="50" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="sxZ-ki-XeG" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.45882352939999999" green="0.52941176469999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Qwn-r2-nKj" firstAttribute="centerX" secondItem="V0M-kY-ORQ" secondAttribute="centerX" id="ro4-I5-llc"/>
+                                <constraint firstAttribute="height" constant="310" id="yJ5-wa-IBU" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                            </constraints>
+                            <edgeInsets key="layoutMargins" top="100" left="8" bottom="30" right="8"/>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="3bK-mh-FPg"/>
+                                    <exclude reference="KPJ-MX-Mho"/>
+                                </mask>
+                            </variation>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ECC-Pm-7EC">
+                            <rect key="frame" x="0.0" y="310" width="393" height="88"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="JM9-fT-ti2">
+                                    <rect key="frame" x="16" y="30" width="361" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming meetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBz-Eb-y52">
+                                            <rect key="frame" x="0.0" y="0.0" width="155.33333333333334" height="50"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8u-UI-jTk">
+                                            <rect key="frame" x="288" y="0.0" width="73" height="50"/>
+                                            <color key="tintColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="View All">
+                                                <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="viewAllDidTap:" destination="-1" eventType="touchUpInside" id="O0c-PC-pn4"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="KIx-Ll-lJZ" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="30" left="8" bottom="8" right="8"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nB4-qY-kLa">
+                            <rect key="frame" x="0.0" y="398" width="393" height="31.333333333333314"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr4-6f-xy3">
+                                    <rect key="frame" x="20" y="0.0" width="353" height="23.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="8" right="20"/>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXY-qz-rYw">
+                            <rect key="frame" x="0.0" y="429.33333333333326" width="393" height="422.66666666666674"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBook" translatesAutoresizingMaskIntoConstraints="NO" id="Sm6-g4-SJj">
+                                    <rect key="frame" x="126.66666666666669" y="156.33333333333331" width="140" height="110"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="110" id="Shh-Kg-4rQ" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                        <constraint firstAttribute="width" constant="140" id="sJm-eU-WNa" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                                    </constraints>
+                                </imageView>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2Dm-r2-MoJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="422.66666666666669"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="yj4-u1-koz">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="2Dm-r2-MoJ" firstAttribute="leading" secondItem="NXY-qz-rYw" secondAttribute="leading" id="4zt-wP-mPB"/>
+                                <constraint firstItem="Sm6-g4-SJj" firstAttribute="centerX" secondItem="NXY-qz-rYw" secondAttribute="centerX" id="IHd-3u-9pB"/>
+                                <constraint firstItem="2Dm-r2-MoJ" firstAttribute="top" secondItem="NXY-qz-rYw" secondAttribute="top" id="P6e-Hx-ss4"/>
+                                <constraint firstAttribute="trailing" secondItem="2Dm-r2-MoJ" secondAttribute="trailing" id="R4J-Rw-MNh"/>
+                                <constraint firstItem="Sm6-g4-SJj" firstAttribute="centerY" secondItem="NXY-qz-rYw" secondAttribute="centerY" id="fut-uZ-KvA"/>
+                                <constraint firstAttribute="bottom" secondItem="2Dm-r2-MoJ" secondAttribute="bottom" id="oCe-8K-LdG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRD-QX-pdw">
+                    <rect key="frame" x="20" y="290" width="353" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-eq-2Lj">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXp-kE-ibE">
+                                    <rect key="frame" x="8" y="15.666666666666687" width="268" height="18.666666666666671"/>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="gHp-f7-WuJ">
+                                    <rect key="frame" x="296" y="10" width="51" height="30"/>
+                                    <color key="onTintColor" red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="thumbTintColor" red="0.45882352941176469" green="0.52941176470588236" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="changeOnlineState:" destination="-1" eventType="valueChanged" id="0Ph-d7-X1H"/>
+                                    </connections>
+                                </switch>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="10" left="8" bottom="10" right="8"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pNE-eq-2Lj" secondAttribute="trailing" id="8lB-ju-FcD"/>
+                        <constraint firstAttribute="bottom" secondItem="pNE-eq-2Lj" secondAttribute="bottom" id="chH-bp-fXa"/>
+                        <constraint firstItem="pNE-eq-2Lj" firstAttribute="top" secondItem="NRD-QX-pdw" secondAttribute="top" id="kmE-VN-jcd"/>
+                        <constraint firstAttribute="height" constant="50" id="rxl-RW-sVv" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+                        <constraint firstItem="pNE-eq-2Lj" firstAttribute="leading" secondItem="NRD-QX-pdw" secondAttribute="leading" id="uG6-Ke-qRd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fXh-se-BE3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jNe-t7-djH" firstAttribute="top" secondItem="qLi-rg-96i" secondAttribute="top" id="JKR-6n-2S0"/>
+                <constraint firstItem="NRD-QX-pdw" firstAttribute="leading" secondItem="fXh-se-BE3" secondAttribute="leading" constant="20" id="MWB-wh-4Ym"/>
+                <constraint firstAttribute="bottom" secondItem="jNe-t7-djH" secondAttribute="bottom" id="Mq5-fv-7Im"/>
+                <constraint firstItem="fXh-se-BE3" firstAttribute="trailing" secondItem="NRD-QX-pdw" secondAttribute="trailing" constant="20" id="vu8-Om-iQG"/>
+                <constraint firstAttribute="trailing" secondItem="jNe-t7-djH" secondAttribute="trailing" id="wuw-uc-tvz"/>
+                <constraint firstItem="jNe-t7-djH" firstAttribute="leading" secondItem="qLi-rg-96i" secondAttribute="leading" id="xsC-Ti-s9p"/>
+                <constraint firstItem="NRD-QX-pdw" firstAttribute="top" secondItem="qLi-rg-96i" secondAttribute="top" constant="290" id="yuQ-Ho-bsx" customClass="AdaptiveLayoutConstraint" customModule="PerfectSelf" customModuleProvider="target"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="-627"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noBook" width="143" height="111"/>
+        <image name="splash" width="104" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
